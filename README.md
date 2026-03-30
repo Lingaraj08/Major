@@ -76,7 +76,7 @@
 
 ## Steps to start the app
       1) Start python virtual env
-            python -m venv venv
+            py -m venv venv
       2) Activate the virtual environment venv
             source venv/bin/activate
       3) Install python pip paclages

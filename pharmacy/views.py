@@ -239,4 +239,12 @@ def decrease_cart(request, pk):
         logout(request)
         messages.error(request, 'Not Authorized')
         return render(request, 'patient-login.html') 
+
+from django.conf import settings
+
+def pharmacy_dashboard(request):
+    context = {
+        'GOOGLE_MAPS_API_KEY': settings.GOOGLE_MAPS_API_KEY
+    }
+    return render(request, 'Pharmacy/shop.html', context)
 # Create your views here.
